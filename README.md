@@ -105,4 +105,4 @@ ASP.NET Core 9.0 ile kimlik doğrulama, yetkilendirme ve kullanıcı yönetimi k
 ## Geliştirici
 
 **Yunus Emre Altun**
-Eğitim: Udemy — ASP.NET Core 9.0 Identity ve JWT
+Eğitim: Udemy — Murat Yücedağ ASP.NET Core 9.0 Identity ve JWT
