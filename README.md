@@ -39,6 +39,10 @@ ASP.NET Core 9.0 ile kimlik doğrulama, yetkilendirme ve kullanıcı yönetimi k
 | --- | --- |
 | ![Gelen kutusu](docs/screenshots/inbox.png) | ![Giden kutusu](docs/screenshots/outbox.png) |
 
+| Mesaj detayları | Toksik yorum yönetimi |
+| --- | --- |
+| ![Mesaj detayları](docs/screenshots/message-detail.png) | ![Toksik yorum yönetimi](docs/screenshots/toxic-comments.png) |
+
 ## Teknolojiler
 
 - C# ve ASP.NET Core 9.0 MVC
