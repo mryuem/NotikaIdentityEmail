@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\login-form-18\.DS_Store" />
+    <None Include="wwwroot\login-form-18\css\.DS_Store" />
+    <None Include="wwwroot\login-form-18\css\bootstrap\.DS_Store" />
+    <None Include="wwwroot\login-form-18\css\bootstrap\mixins\.DS_Store" />
+    <None Include="wwwroot\login-form-18\fonts\.DS_Store" />
+    <None Include="wwwroot\login-form-18\images\.DS_Store" />
+    <None Include="wwwroot\login-form-18\js\.DS_Store" />
+    <None Include="wwwroot\login-form-18\scss\.DS_Store" />
+    <None Include="wwwroot\login-form-18\scss\bootstrap\.DS_Store" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="9.0.19" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.19" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.3.12" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="9.0.19" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.19" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.19" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.19">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="9.0.12" />
+    <PackageReference Include="NETCore.MailKit" Version="2.1.0" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,23 @@
+﻿
+@{
+    Layout = null;
+}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap-grid.css" integrity="sha512-nIykAn2cWE7iACgVi+thu4am6DGj+0WNXEa8o40WXBOnovP6WuBrIvrjwfxsqMjddjRbgyQqaRt92uQLV60VYw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<div class="container">
+	<br /><br/>
+	<form method="post" asp-controller="Login" asp-action="ExternalLogin">
+        <div class="google-area">
+            <!-- Ayırıcı -->
+            <div class="or-text">
+                veya
+            </div>
+            <!-- Google Butonu -->
+            <input type="hidden" name="provider" value="Google" />
+            <a href="/Login/ExternalLogin"
+               class="google-button">
+                <i class="fa fa-google google-icon"></i>
+                Google ile Giriş Yap
+            </a>
+        </div>
+	</form>
+</div>

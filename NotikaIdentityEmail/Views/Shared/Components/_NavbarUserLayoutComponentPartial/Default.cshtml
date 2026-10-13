@@ -1,0 +1,101 @@
+<div class="main-menu-area mg-tb-40">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <ul class="nav nav-tabs notika-menu-wrap menu-it-icon-pro">
+                    <li>
+                        <a data-toggle="tab" href="/UserLayout/Index"><i class="notika-icon notika-house"></i> Anasayfa</a>
+                    </li>
+                    <li class="active">
+                        <a data-toggle="tab" href="#mailbox"><i class="notika-icon notika-mail"></i> Email</a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" href="#Interface"><i class="notika-icon notika-edit"></i> Profil</a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" href="#Users"><i class="notika-icon notika-windows"></i> Kullanıcılar</a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" href="#Roles"><i class="notika-icon notika-windows"></i> Roller</a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" href="#Settings"><i class="notika-icon notika-windows"></i> Ayarlar</a>
+                    </li>
+                    
+                </ul>
+                <div class="tab-content custom-menu-content">
+                    <div id="Home" class="tab-pane in notika-tab-menu-bg animated flipInX">
+                        <ul class="notika-main-menu-dropdown">
+                            <li>
+                                <a href="/UserLayout/Index">Dashboard </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="mailbox" class="tab-pane active notika-tab-menu-bg animated flipInX">
+                        <ul class="notika-main-menu-dropdown">
+                            <li>
+                                <a href="/Message/Inbox">Gelen Kutusu</a>
+                            </li>
+                            <li>
+                                <a href="/Message/SendBox">Giden Kutusu</a>
+                            </li>
+                            <li>
+                                <a href="/Message/ComposeMessage">Yeni Mesaj Oluştur</a>
+                            </li>
+                           
+                        </ul>
+                    </div>
+                    <div id="Interface" class="tab-pane notika-tab-menu-bg animated flipInX">
+                        <ul class="notika-main-menu-dropdown">
+                            <li>
+                                <a href="/Profile/EditProfile">Profilim</a>
+                            </li>
+                            <li>
+                                <a href="/PassWordChange/ForgetPassword">Şifre Değiştir</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div id="Users" class="tab-pane notika-tab-menu-bg animated flipInX">
+                        <ul class="notika-main-menu-dropdown">
+                            <li>
+                                <a href="/User/UserList">Kullanıcı Listesi</a>
+                            </li>
+                            <li>
+                                <a href="/Register/UserRegister">Yeni Kullanıcı</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div id="Roles" class="tab-pane notika-tab-menu-bg animated flipInX">
+                        <ul class="notika-main-menu-dropdown">
+                            <li>
+                                <a href="/Role/RoleList">Rol Listesi</a>
+                            </li>
+                            <li>
+                                <a href="/Role/UserList">Yeni Rol Atama</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div id="Settings" class="tab-pane notika-tab-menu-bg animated flipInX">
+                        <ul class="notika-main-menu-dropdown">
+                            <li>
+                                <a href="/Profile/EditProfile">Profilim</a>
+                            </li>
+                            <li>
+                                <a href="/UserLayout/Index">Sistem Ayarları</a>
+                            </li>
+                            <li>
+                                <form method="post" action="/Login/Logout">
+									<button type="submit" class="btn btn-danger">Çıkış Yap</button>
+                                </form>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+        </div>
+    </div>
+</div>

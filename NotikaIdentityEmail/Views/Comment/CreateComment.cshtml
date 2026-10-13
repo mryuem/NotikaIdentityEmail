@@ -1,0 +1,21 @@
+﻿<div class="forum-post">
+    <div class="basic-tb-hd">
+        <h3>📝 Yeni Yorum Oluştur</h3>
+    </div>
+
+    <form asp-action="CreateComment" asp-controller="Comment" method="post">
+
+        <div class="form-group">
+            <label>Yorumunuz</label>
+                 <textarea name="CommentDetail"
+                      class="form-control"
+                      rows="5"
+                      placeholder="Yorumunuzu buraya yazınız...">
+                 </textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">
+            Yorumu Gönder
+        </button>
+
+    </form>
+</div>
