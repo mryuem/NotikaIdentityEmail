@@ -48,51 +48,6 @@ ASP.NET Core 9.0 ile kimlik doğrulama, yetkilendirme ve kullanıcı yönetimi k
 - SMTP
 - HTML, CSS, JavaScript, Bootstrap ve Summernote
 
-## Kurulum
-
-### Gereksinimler
-
-- .NET 9 SDK
-- Microsoft SQL Server
-- EF Core CLI (`dotnet tool install --global dotnet-ef`)
-
-### Adımlar
-
-1. Repoyu klonlayın ve çözümü Visual Studio ile açın:
-
-   ```powershell
-   git clone https://github.com/mryuem/NotikaIdentityEmail.git
-   cd NotikaIdentityEmail
-   ```
-
-2. Proje dizininde hassas ayarları User Secrets ile tanımlayın. Gerçek değerleri kaynak koda veya GitHub'a eklemeyin:
-
-   ```powershell
-   dotnet user-secrets init --project .\NotikaIdentityEmail\NotikaIdentityEmail.csproj
-   dotnet user-secrets set "JwtSettingsKey:Key" "<uzun-ve-rastgele-jwt-anahtari>" --project .\NotikaIdentityEmail\NotikaIdentityEmail.csproj
-   dotnet user-secrets set "ConnectionStrings:DefaultConnection" "<sql-server-connection-string>" --project .\NotikaIdentityEmail\NotikaIdentityEmail.csproj
-   ```
-
-3. Gerekli entegrasyonlar için uygulama ortam değişkenlerini ayarlayın:
-
-   - `GOOGLE_CLIENT_ID` ve `GOOGLE_CLIENT_SECRET`: Google ile giriş
-   - `SMTP_EMAIL` ve `SMTP_APP_PASSWORD`: doğrulama ve parola sıfırlama e-postaları
-   - `HUGGINGFACE_API_TOKEN`: yorum toksisite analizi
-
-   Bu değişkenler yalnızca ilgili özellikleri kullanırken gerekir. SMTP ayarları olmadan kayıt/doğrulama ve parola sıfırlama e-postaları gönderilemez; Hugging Face token'ı olmadan toksik içerik analizi çalışmaz.
-
-4. Veritabanı migration'larını uygulayın:
-
-   ```powershell
-   dotnet ef database update --project .\NotikaIdentityEmail\NotikaIdentityEmail.csproj
-   ```
-
-5. Uygulamayı çalıştırın:
-
-   ```powershell
-   dotnet run --project .\NotikaIdentityEmail\NotikaIdentityEmail.csproj
-   ```
-
 ## Öğrenme Hedefleri
 
 - Kimlik doğrulama ile yetkilendirme arasındaki farkı kavramak
@@ -105,4 +60,5 @@ ASP.NET Core 9.0 ile kimlik doğrulama, yetkilendirme ve kullanıcı yönetimi k
 ## Geliştirici
 
 **Yunus Emre Altun**
+
 Eğitim: Udemy — Murat Yücedağ ASP.NET Core 9.0 Identity ve JWT
